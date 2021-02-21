@@ -19,10 +19,10 @@ public class Address {
     }
 
     public void setCity(String city) {
-        this.city = city;
         if (this.city == null) {
             throw new NullFieldException("Поле не может null");
         }
+        this.city = city;
     }
 
     public String getStreet() {
@@ -30,10 +30,10 @@ public class Address {
     }
 
     public void setStreet(String street) {
-        this.street = street;
         if (this.street == null) {
             throw new NullFieldException("Поле не может null");
         }
+        this.street = street;
     }
 
     public int getHomeNumber() {
@@ -41,10 +41,10 @@ public class Address {
     }
 
     public void setHomeNumber(int homeNumber) {
-        this.homeNumber = homeNumber;
         if (this.homeNumber == 0) {
             throw new NullFieldException("Поле не может 0");
         }
+        this.homeNumber = homeNumber;
     }
 
     @Override

@@ -23,8 +23,8 @@ public class Main {
         // Записываем в файл "WritePersons" созданные экземпляры класса Person (коллекцию экземпляров класса)
         PersonlOUtil.writePersons(users, "WritePersons");
 
-        // Читаем файл и генерируем коллекцию persons с объектами класса Person (обрабатываем исключение)
-        // и выводим колекцию в консаль
+        // Читаем файл, генерируем коллекцию persons с объектами класса Person (обрабатываем исключение)
+        // выводим колекцию в консоль
         try {
             PersonlOUtil.readPersons("WritePersons").forEach(System.out::print);
         } catch (EmptySourceFileException e) {

@@ -19,10 +19,10 @@ public class Person {
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
         if (this.firstName == null) {
             throw new NullFieldException("Поле не может null");
         }
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -30,10 +30,10 @@ public class Person {
     }
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
         if (this.lastName == null) {
             throw new NullFieldException("Поле не может null");
         }
+        this.lastName = lastName;
     }
 
     public Address getAddress() {
@@ -41,10 +41,10 @@ public class Person {
     }
 
     public void setAddress(Address address) {
-        this.address = address;
         if (this.address == null) {
             throw new NullFieldException("Поле не может null");
         }
+        this.address = address;
     }
 
     @Override
